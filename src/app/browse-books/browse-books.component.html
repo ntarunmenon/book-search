@@ -1,0 +1,19 @@
+<div class = "title-bar">
+  Find Books
+  <div><input class = "search-input" placeholder="Text" type="text" /></div>
+</div>
+<div *ngFor = "let book of searchResults" class="books-list">
+  <a class="book_summary" href = "book-detail.html">
+      <div class="book_summary_section">
+          <div class="book_summary_title">{{book.title}}</div>
+          <div class="book_summary_image_container">
+              <img src="{{book.url}}">
+          </div>
+      </div>    
+      <div class="book_summary_desc">{{book.description}}</div>
+      <div class="book_summary_author">
+          <span id="written">Written by:</span><br>
+          <span id="author_name">{{book.author}}</span>
+      </div>
+  </a>
+</div>

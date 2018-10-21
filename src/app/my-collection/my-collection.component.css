@@ -1,0 +1,90 @@
+.title-bar {
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.books-list {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.book_summary {
+    height: 17rem;
+    width: 28%;
+    padding: 2rem;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 
+    0 2px 2px 0 rgba(0,0,0,.14), 
+    0 1px 5px 0 rgba(0,0,0,.12);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.book_summary_section{
+    /* text-align: right; */
+    position: relative;
+    height: 5rem;
+}
+
+.book_summary_title {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0px;
+}
+
+.book_summary_image_container {
+    height: 5rem;
+    width: 3.6rem;
+    display: inline-block;
+    position: absolute;
+    right: 0rem;
+}
+
+.book_summary_image_container  img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.book_summary_desc{
+    /* display: inline-block; */
+    text-align: left;
+    margin-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+.book_summary_author{
+    /* display: inline-block; */
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+#written{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+
+#author_name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+} 
