@@ -10,7 +10,8 @@
 .side-bar-section {
     text-decoration: none;
     display: block;
-    margin: 2rem;    
+    margin: 2rem;  
+    cursor: pointer;  
 }
 .side-bar-section-main{
     font-family: Roboto,"Helvetica Neue",sans-serif;

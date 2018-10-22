@@ -1,16 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class = "nav-bar">
     <div >
-        <button class="toggle-button">
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
+        <button (click)='navigate()' class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
         </button>
     </div>
-    <div class = "nav-bar__section">
+    <div (click)='test()' class = "nav-bar__section">
         Book Collection
     </div>
 </div>
-<app-side-bar></app-side-bar>
+<app-side-bar (sideBarClicked)='navigateToPage($event)' *ngIf="displaySideBar"></app-side-bar>
 <router-outlet></router-outlet>
 

@@ -1,0 +1,82 @@
+#book-info {
+    text-align: center
+}
+
+.book_detail {
+    width: 50%;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 
+    0 2px 2px 0 rgba(0,0,0,.14), 
+    0 1px 5px 0 rgba(0,0,0,.12);
+    height: 28rem;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.book_detail_section {
+    position: relative;
+    height: 5rem;
+}
+
+.book_detail_title {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0px;
+}
+
+.book_detail_image_container {
+    height: 5rem;
+    width: 3.6rem;
+    display: inline-block;
+    position: absolute;
+    right: 0rem;
+}
+
+.book_detail_image_container  img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.book_detail_desc{
+    /* display: inline-block; */
+    text-align: left;
+    margin-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.author_wrapper {
+    position: relative;
+}
+.book_detail_author{
+    text-align: left;
+    bottom: 0;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+#written{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+
+#author_name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+} 
+
+.removebook {
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight:500;
+    color: white;
+    padding: 0.5rem;
+    display: block;
+}

@@ -2,7 +2,7 @@
     My Collection
 </div>
 <div *ngFor = "let book of myCollection" class="books-list">
-    <a class="book_summary" href = "book-detail.html">
+    <a class="book_summary" routerLink="/bookDetail">
         <div class="book_summary_section">
             <div class="book_summary_title">{{book.title}}</div>
             <div class="book_summary_image_container">

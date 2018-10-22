@@ -3,7 +3,6 @@
     height: 4rem;
     width: 100%;
     position: relative;
-    z-index: -100;
 }
 
 .nav-bar div {
@@ -24,6 +23,10 @@
     width: 2rem;
     background: transparent;
     border: none;
+}
+
+.toggle-button:focus {
+    outline:none;
 }
 
 .toggle-button__bar {

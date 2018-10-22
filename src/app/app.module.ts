@@ -6,13 +6,15 @@ import { MyCollectionComponent } from './my-collection/my-collection.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BrowseBooksComponent } from './browse-books/browse-books.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyCollectionComponent,
     SideBarComponent,
-    BrowseBooksComponent
+    BrowseBooksComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
