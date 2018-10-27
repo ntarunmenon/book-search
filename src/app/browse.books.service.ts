@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { concatAll, debounceTime, toArray, distinctUntilChanged, switchMap,map} from 'rxjs/operators';
+import { concatAll, debounceTime, toArray, distinctUntilChanged, switchMap,map, filter} from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Injectable()
@@ -19,7 +19,6 @@ export class BrowseBooksService {
         map(data => data['items'])
         ,concatAll()
         , map(data => {
-            console.log(data);
             return {
                 id: data['id'],
                 title: data['volumeInfo'].title,
@@ -35,6 +34,7 @@ export class BrowseBooksService {
     return terms.pipe(
        debounceTime(400)
        , distinctUntilChanged()
+       , filter(term => term.length > 4 )
        , switchMap(term => this.performsearch(term))
     );
   }

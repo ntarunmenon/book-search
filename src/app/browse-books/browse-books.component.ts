@@ -20,7 +20,6 @@ export class BrowseBooksComponent implements OnInit {
     private selectBookService:MyCollectionService) { 
     this.booksService.search(this.searchTerm$)
     .subscribe(results => {
-      console.log(results);
       this.searchResults = results;
     });
   }
