@@ -7,6 +7,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BrowseBooksComponent } from './browse-books/browse-books.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SelectBookService } from './select.book.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SelectBookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

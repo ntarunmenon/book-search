@@ -19,7 +19,8 @@ export class MyCollectionComponent implements OnInit {
       description:'This is an adventure story about a young shepherd' + 
       'boy who learns how to live his dreams. This is a story which has been compared' + 
       'to the works of Richard Bach, and is aimed at the young and old alike.',
-      author:'Paulo Coelho'
+      author:'Paulo Coelho',
+      id:"123"
     }
   }
 

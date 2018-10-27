@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectBookService } from '../select.book.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book-detail',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDetailComponent implements OnInit {
 
-  constructor() { }
+
+  private selectedBook:Book; 
+  isAddBooks: boolean;
+
+  constructor(private selectBooksService:SelectBookService,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.selectBooksService.selectedBook$.subscribe(
+      selectedBook => this.selectedBook = selectedBook);
+
+      this.route.queryParams.subscribe(params => {
+        this.isAddBooks = params['isAddBooks'] === 'true';
+      });
   }
 
 }

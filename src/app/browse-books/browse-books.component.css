@@ -34,6 +34,7 @@
     display: inline-block;
     text-decoration: none;
     color: black;
+    vertical-align:top;
 }
 
 .book_summary_section{

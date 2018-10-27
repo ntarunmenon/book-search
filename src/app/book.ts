@@ -3,4 +3,5 @@ interface Book {
     url: string;
     description: string;
     author: string;
+    id: string;
   }
