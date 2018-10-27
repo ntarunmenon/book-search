@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyCollectionService } from '../select.book.service';
+import { MyCollectionService } from '../mycollection.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 

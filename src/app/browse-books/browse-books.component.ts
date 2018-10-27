@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { BrowseBooksService } from '../books.service';
+import { BrowseBooksService } from '../browse.books.service';
 import { Router } from '@angular/router';
-import { MyCollectionService } from '../select.book.service';
+import { MyCollectionService } from '../mycollection.service';
 
 @Component({
   selector: 'app-browse-books',

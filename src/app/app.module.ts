@@ -8,7 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BrowseBooksComponent } from './browse-books/browse-books.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MyCollectionService } from './select.book.service';
+import { MyCollectionService } from './mycollection.service';
 
 @NgModule({
   declarations: [
