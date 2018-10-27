@@ -4,7 +4,7 @@ import { concatAll, debounceTime, toArray, distinctUntilChanged, switchMap,map} 
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class BooksService {
+export class BrowseBooksService {
   constructor(private http: HttpClient) { }
 
   SEARCH_URL = 'https://www.googleapis.com/books/v1/volumes';

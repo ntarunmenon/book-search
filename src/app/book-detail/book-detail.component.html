@@ -15,7 +15,7 @@
               <span id="author_name"> {{selectedBook.author}}</span>
           </div>
       </div>
-      <button class="removebook">
+      <button class="removebook" (click)="addOrRemoveBook()">
         {{isAddBooks == true ? 'Add Books to My Collection': 
             'Remove Books from My Collection'}}
     </button>

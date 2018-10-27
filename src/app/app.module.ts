@@ -8,7 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BrowseBooksComponent } from './browse-books/browse-books.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SelectBookService } from './select.book.service';
+import { MyCollectionService } from './select.book.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { SelectBookService } from './select.book.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [SelectBookService],
+  providers: [MyCollectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

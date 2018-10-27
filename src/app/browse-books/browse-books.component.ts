@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { BooksService } from '../books.service';
+import { BrowseBooksService } from '../books.service';
 import { Router } from '@angular/router';
-import { SelectBookService } from '../select.book.service';
+import { MyCollectionService } from '../select.book.service';
 
 @Component({
   selector: 'app-browse-books',
   templateUrl: './browse-books.component.html',
   styleUrls: ['./browse-books.component.css'],
-  providers: [BooksService]
+  providers: [BrowseBooksService]
 })
 export class BrowseBooksComponent implements OnInit {
 
   searchResults: Book[];
   searchTerm$ = new Subject<string>();
 
-  constructor(private booksService:BooksService,
+  constructor(private booksService:BrowseBooksService,
     private router: Router,
-    private selectBookService:SelectBookService) { 
+    private selectBookService:MyCollectionService) { 
     this.booksService.search(this.searchTerm$)
     .subscribe(results => {
       console.log(results);
